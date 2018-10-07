@@ -1,0 +1,8 @@
+{
+    "registry-mirrors": [
+      "https://docker.mirrors.ustc.edu.cn/", "http://docker.nexus.irhawks.com"
+    ],  
+    "insecure-registries": [
+      "k8s.gcr.io", "gcr.io", "quay.io", "docker.nexus.irhawks.com", "nexus.irhawks.com", "registry.gitlab.com", "upload.docker.nexus.irhawks.com"
+    ]
+}
