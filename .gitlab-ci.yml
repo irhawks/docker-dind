@@ -12,7 +12,9 @@ before_script:
 build:
   stage: build
   script:
-    - docker build -t irhawks/dind-local .
+    - docker build -t irhawks/docker-dind:v20181007 .
     - docker login --username docker --password docker upload.docker.nexus.irhawks.com
+    - docker tag irhawks/docker-dind:v20181007 upload.docker.nexus.irhawks.com/irhawks/docker-dind:v20181007
+    - docker push upload.docker.nexus.irhawks.com/irhawks/docker-dind:v20181007
     #- docker run my-docker-image /script/to/run/tests
 
