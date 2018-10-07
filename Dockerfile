@@ -1,7 +1,7 @@
 FROM docker:dind
 
-mkdir -p /etc/docker
+CMD mkdir -p /etc/docker
 
-echo '{ "insecure-registries" : [ "upload.docker.nexus.irhawks.com" ] }' > /etc/docker/daemon.json
+CMD echo '{ "insecure-registries" : [ "upload.docker.nexus.irhawks.com" ] }' > /etc/docker/daemon.json
 
-# docker login --username docker --password docker upload.docker.nexus.irhawks.com
+# CMD docker login --username docker --password docker upload.docker.nexus.irhawks.com
