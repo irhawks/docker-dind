@@ -13,6 +13,6 @@ build:
   stage: build
   script:
     - docker build -t irhawks/dind-local .
-    - docker login --username docker --password docker
+    - docker login --username docker --password docker upload.docker.nexus.irhawks.com
     #- docker run my-docker-image /script/to/run/tests
 
