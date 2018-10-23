@@ -1,11 +1,6 @@
 {
-    "registry-mirrors": [
-      "https://ustc.docker.nexus.irhawks.com/", "http://docker.nexus.irhawks.com"
-    ],  
-    "insecure-registries": [
-      "k8s.gcr.io", "gcr.io", "quay.io", "registry.gitlab.com",
-      "upload.docker.nexus.irhawks.com",
-      "ustc.docker.nexus.irhawks.com",
-      "docker.nexus.irhawks.com", "nexus.irhawks.com"
-    ]
+	"registry-mirrors": ["http://ustc.docker.nexus.irhawks.com/"],
+	"insecure-registries": [
+		"ustc.docker.nexus.irhawks.com", "gcr.io", "k8s.gcr.io", "quay.io", "registry.gitlab.com", "docker.nexus.irhawks.com", "docker.ext.nexus.irhawks.com", "upload.docker.nexus.irhawks.com"
+	]
 }
